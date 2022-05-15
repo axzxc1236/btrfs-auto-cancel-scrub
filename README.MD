@@ -1,4 +1,4 @@
-# Auto start btrfs scrubbing before shutdown/reboot
+# Auto cancel btrfs scrubbing before shutdown/reboot
 
 Looking at the code yourself is encouraged if you know basics of Python, no warranty comes with anything in this repository.
 
