@@ -1,0 +1,11 @@
+[Unit]
+Description=Cancel all btrfs scrubs before shutdown/reboot
+DefaultDependencies=no
+Before=shutdown.target reboot.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/btrfs-cancel-all-scrub
+
+[Install]
+WantedBy=shutdown.target reboot.target
